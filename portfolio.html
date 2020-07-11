@@ -11,7 +11,7 @@
   <!--<body background="images/fractals.gif">-->
   
 <!-- Project 1 Pick it up   -->
-  <a href = "https://github.com/Pruthvi-Sanghavi/PickItUp"><h><font face="Ubuntu" size="4">PickIt Up</font></h></a>
+  <a href = "https://github.com/Pruthvi-Sanghavi/PickItUp"><p><font face="Ubuntu" size="4">PickIt Up</font></p></a>
   <img src="images/projects/pickitup.gif">
   <p align="justify">This project leveraged the use of OMPL (Open Motion Planning Library) and Move it. The manipulator should exchange the positions of the red and the white block placed on two 
   tables avoiding an obstacle wall. This is carried out by motion interface tool in rviz. Using the toggle, the end effector of the robot is places at appropriate position in space
@@ -19,7 +19,7 @@
   trajectory is simulated with real life physics in Gazebo. Code for the project can be found on the github link.</p>
   
 <!-- Project 2 Apis   -->
-  <a href = "https://github.com/Pruthvi-Sanghavi/APIS-Acoustically_Powered_InSect"><h><font face="Ubuntu" size="4">Acoustcally Powered InSect (APIS)</font></h></a>
+  <a href = "https://github.com/Pruthvi-Sanghavi/APIS-Acoustically_Powered_InSect"><p><font face="Ubuntu" size="4">Acoustcally Powered InSect (APIS)</font></p></a>
   <img src="images/projects/apis.gif">
   <p align="justify">The word APIS is the scientific name for honeybee. Insect flight, to an avid viewer appears to be much convoluted. The mechanics these insect uses are difficult to decipher. 
   In  sects such as honey bees, butterflies, dragonflies make use of extremely complicated wing motions and aerodynamics to steer themselves with agility.  Mimicking the natural model used by these insects and birds to construct micro robots becomes still more convoluted due to unavailability of very small actuators. Even if these actuators are made customarily, the control of wing movements mounted on these actuators is hard. 
@@ -35,6 +35,40 @@
   <img src="images/projects/equation_apis.png">
   <p align="justify">The primary part of actuator are the resonators and the string. When signal from the micro-controller is provided to the resonators, the resonators vibrate. This vibration causes the strings to vibrate. The natural modes of frequency of the string depends upon the type of its material (density), tension and length. When the resonator is vibrated with a frequency corresponding to the first mode of vibration of string, the amplitude of vibration increases and resonance occurs. This vibrational energy can be used for doing work. 
   A honey bee (Apis Mallifera) is an agile flyer flapping its wings about 200 times /second. The figure shown above is a honey bee robot ‘APIS’. Like a real bee, this robot possesses two pairs of wings on each side: A primary wing and a secondary wing. When the resonators are vibrated with the fundamental harmonic frequency resonance occurs. This high amplitude vibration vibrates the wings in sync and as a result thrust is generated.
+  </p>
+  
+  
+<!-- Project 3 Mechanical Obstacle Avoidance Sensor   -->
+  <p><font face="Ubuntu" size="4">VR-OAS (Venus Rover Obstacle Avoidance System)</font></p>
+  <img src="images/projects/vroas.jpg">
+  <p align="justify">The proposed design is fully mechanical and can be divided into two modules. These modules are the Obstacle avoidance module and Hole/Valley/slope detection module. The description for each can be given as follows.
+
+  Obstacle Avoidance Module
+
+  Construction:
+
+  The obstacle avoidance module consists of three push rods or pins.
+  Out of the three pins, two pins (Pl and Pr) are used for the detection of the obstacle to the left and the right of the rover respectively. The third pin (Pc) which is mounted on the center is extended slightly forward in comparison to the two pins (A and B) is used when the obstacle obstructs the path of the rover from the center.
+  The other ends of the pins Pl and Pr are connected with a cranks and connecting rods of the toggle mechanism. The connecting rod at the end are connected to racks (Rl and Rr)
+  The racks R1  and R2 are in mesh with the gears G1 and G2.
+  These gears are in mesh with a compound gear system Ga and Gb which in turn are in mesh with the main rack R.
+  The ends of this rack are in mounted with bell crank levers (L1 and L2) the other joints of which are connected with the wheels of the rover.
+  Pin Pc is mounted with some eccentricity on the gear Ge which is in mesh with the rack R. 
+  Working:
+
+  When the path of the rover is obstructed from the right, the right pin Pr gets pressed. This push on the pin actuates the toggle mechanism which in turn moves the rack Rr horizontally. Thus making the gears to rotate. The rotation of the gear would move the rack R and thus this would help the wheel to steer because of the moment of the bell crank lever.
+  Similar event happens when the path of the rover is obstructed from the left and the left link is pressed.
+  When the path of the rover is obstructed from the center. The extended pin Pc gets pressed. This pin Pc rotates the gear Ge and thus the rack R which is in mesh with the gear Ge  moves. The motion of the rack moves helps to steer the wheel.
+  Now as the obstacle is detected, the rover would move in the reverse direction and the mechanism would help the vehicle to turn. This will generate a combined reverse + turning motion bringing the vehicle away from the obstacles and finding new path forward.
+  Hole/Valley/ Slope detection module.
+
+  Mechanism for the detection of Holes/ valleys,
+
+  In order to detect holes and valleys having depths greater than 0.35 meters we are proposing a simple suspended pendulum mechanism. This mechanism consists of an elastic thread at the end of which a pendulum is mounted. The length of the thread is slightly more than 0.35 meters. As a result when the rover moves ahead the pendulum bob would just freely slide with the ground keeping the thread loose. When the hole or valley having a depth more than 0.35 meters is encountered the pendulum would itself move down and the string would get tensed. The other end of the thread is connected with the link which triggers an indication link on the rover.
+
+  Mechanism for the detection of the slope greater than 30 degree
+
+  In order to indicate the slope greater than thirty degrees a pendulum is used. The pendulum is freely suspended, so when the rover moves uphill or downhill on the slope, the chassis of the rover becomes parallel to the slope and so the rod of the pendulum have a relative motion with respect to the chassis and as a result angle of the slope can be indicated. When the slope is thirty degree or more a link gets pressed.
   </p>
 <!--   </body> -->
 </center>
