@@ -1,40 +1,25 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <title>Pruthvi Sanghavi</title>
-    <link rel="icon" type="image/png" href="images/logo.png"/>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | firstgame</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/firstgamehtml.json", {onProgress: UnityProgress});
+    </script>
   </head>
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-<!--   <body background="images/chaotic_oscillator.png"> -->
-  <body background="images/back.png">
-  <center>
-    <h1 style="color:white"> Pruthvi Sanghavi</h1>
-  </center>
-  <style> 
-  p
-  {
-      width:700px; 
-      word-wrap:break-word;
-  }
-  </style>
-  
-  <p>   </p>
-  <center>
-
-    <a href="index.html" style="color: white"><font face="Ubuntu">Home |</font></a>
-<!--   <p> </p> -->
-    <a href="resume.html" style="color: white"><font face="Ubuntu">Resume |</font></a>
-<!--     <p>   </p> -->
-    <a href="portfolio.html" style="color: white"><font face="Ubuntu">My Projects |</font></a></li>
-    <a href="https://github.com/Pruthvi-Sanghavi/pruthvi-sanghavi.github.io" style="color: white"><font face="Ubuntu">Website Repository</font></a>
-  </center>
-  
-  <center>
-    <p>   </p>
-   
-    <img src="images/profile.JPG"  width="400" height="400"/>
-    <p align="justify" style="color:white"><b>Pruthvi Sanghavi is a Robotics Student at the University of Maryland, College Park with interests in the subjects such as Physics, Dynamical Control Systems, Machine Learning, Augmented Reality, Computer Vision and Path Planning. He is also an Artist, Inventor, Poet and an avid learner.</p>
-  </center>
-  <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="pruthvi-sanghavi"><a class="LI-simple-link" href='https://www.linkedin.com/in/pruthvi-sanghavi?trk=profile-badge'>Pruthvi Sanghavi</a></div>
-
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">firstgame</div>
+      </div>
+    </div>
+  </body>
 </html>
