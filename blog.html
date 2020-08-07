@@ -3,33 +3,47 @@
     <title>Pruthvi Sanghavi</title>
     <link rel="icon" type="image/png" href="images/logo.png"/>
   </head>
+ 
+  <style> 
+    p
+    {
+        width:700px; 
+        word-wrap:break-word;
+    }
+    h
+    {
+        width:700px; 
+        word-wrap:break-word;
+    }
+    code
+    {
+        width:700px; 
+        word-wrap:break-word;
+    }
+  </style>
   <center>
-    <style> 
-      p
-      {
-          width:700px; 
-          word-wrap:break-word;
-      }
-      h
-      {
-          width:700px; 
-          word-wrap:break-word;
-      }
-    </style>
     <h1>Blogs</h1>
     <a href="index.html" style="color: black"><font face="Ubuntu">Home |</font></a>
     <a href="resume.html" style="color: black"><font face="Ubuntu">Resume |</font></a>
     <a href="portfolio.html" style="color: black"><font face="Ubuntu">My Projects |</font></a>
     <a href="blog.html" style="color: black"><font face="Ubuntu">Blogs</font></a>
     <hr>
-    
+  </center>  
+  <center>
     <h2>Building a Robot from Scratch in ROS</h2>
 <!--     <img src="images/blog/ros_cover.png" width="200" height="150" /> -->
     <p align="justify">It has been a long time since I started working on Robot Operating System. The sole purpose of writing this blog/tutorial is making a documentation for my own use.</p>
     <p align="justify">I will try to describe the whole process of creating a robot from scratch in a number of steps.</p>
     <p align="justify"><b> Step 1: Setting up the environment and Writing the robot Description</p>
-    <code>mkdir prubot</code>
-    
-    <hr>
   </center>
+  <code>mkdir prubot</code>
+  <code>cd prubot</code>
+  <code>mkdir src</code>
+  <code>cd src</code>
+  <code>catkin_create_pkg sanbot rospy urdf</code>
+  <code>cd ..</code>
+  <code>catkin_make</code>
+    
+  <hr>
+  
 </html>
