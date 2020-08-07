@@ -22,6 +22,7 @@
     } */
     .codebox {
         border:1px solid black;
+        width: 700px;
         background-color:#EEEEFF;
         white-space: pre-line;
         padding:10px;
@@ -46,8 +47,13 @@
   </center>
   <center>
     <code class="codebox">
-        var message = "hello world!";
-        alert(message);
+      mkdir prubot
+      cd prubot
+      mkdir src
+      cd src
+      catkin_create_pkg sanbot roscpp urdf
+      cd ..
+      catkin_make
     </code>
   </center>
   <hr>
