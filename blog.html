@@ -70,37 +70,11 @@
     </code>
     
     <p align="justify">The code written in the code block spawns a cube in gazebo simulator.</p>
+    <img src="images/blog/snippet1.png"/>
 <!--     <code class="codebox"> -->
 <!--     <textarea rows="70" cols="70" style="border:2px;"> -->
 <!--     <p align="justify"> -->
-    <xmp>
-      <?xml version="1.0" encoding="UTF-8" ?>
-      <!-- Creator : Pruthvi Sanghavi -->
-      <robot name="sanbot" xmlns:xacro="http://www.roswiki.org/xacro">
-          <link name="base_link">
-              <inertial>
-                  <mass value="1.0"/>
-                  <inertia ixx="1.0" ixy="1.0" ixz="1.0"
-                           iyy="1.0" iyz="1.0"
-                           izz="1.0"/>
-              </inertial>
 
-              <colision>
-                  <origin xyz="0 0 0" rpy="0 0 0"/>
-                  <geometry>
-                      <box size="1.0 1.0 1.0"/>
-                  </geometry>
-              </colision>
-
-              <visual>
-                  <origin xyz="0 0 0" rpy="0 0 0"/>
-                  <geometry>
-                      <box size="1.0 1.0 1.0"/>
-                  </geometry>
-              </visual>
-          </link>
-      </robot>
-    </xmp>
 <!--     </textarea> -->
 <!--     </code> -->
   </center>
