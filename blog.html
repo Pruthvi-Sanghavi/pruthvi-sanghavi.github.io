@@ -28,7 +28,7 @@
         padding:10px;
         font-size:0.9em;
         display: inline-block;
-        align: justify;
+        align: center;
     }
   </style>
   <center>
@@ -48,27 +48,27 @@
     <p align="justify">The code below creates a workspace named bot_ws and subsequently creates a package named sanbot</p>
 
   </center>
-  <center>
-    <code class="codebox">
 
-      mkdir bot_ws
-      cd prubot
-      mkdir src
-      cd src
-      catkin_create_pkg sanbot roscpp urdf
-      cd ..
-      catkin_make
-      cd src/sanbot/
-      mkdir urdf
-      mkdir launch
-      cd urdf
-      touch description.urdf
-      cd ..
-      cd launch
-      touch rviz.launch
+  <code class="codebox">
+
+    mkdir bot_ws
+    cd prubot
+    mkdir src
+    cd src
+    catkin_create_pkg sanbot roscpp urdf
+    cd ..
+    catkin_make
+    cd src/sanbot/
+    mkdir urdf
+    mkdir launch
+    cd urdf
+    touch description.urdf
+    cd ..
+    cd launch
+    touch rviz.launch
      
-    </code>
-  </center>
+  </code>
+ 
   <hr>
   
 </html>
