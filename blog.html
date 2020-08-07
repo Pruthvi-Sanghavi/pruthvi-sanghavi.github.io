@@ -15,10 +15,18 @@
         width:700px; 
         word-wrap:break-word;
     }
-    code
+/*     code
     {
         width:700px; 
         word-wrap:break-word;
+    } */
+    .codebox {
+        border:1px solid black;
+        background-color:#EEEEFF;
+        white-space: pre-line;
+        padding:10px;
+        font-size:0.9em;
+        display: inline-block;
     }
   </style>
   <center>
@@ -37,13 +45,10 @@
     <p align="justify"><b> Step 1: Setting up the environment and Writing the robot Description</p>
   </center>
   <center>
-    <code>mkdir prubot <br></code>
-    <code>cd prubot <br></code>
-    <code>mkdir src <br></code>
-    <code>cd src <br></code>
-    <code>catkin_create_pkg sanbot rospy urdf <br></code>
-    <code>cd .. <br></code>
-    <code>catkin_make <br></code>
+    <code class="codebox">
+        var message = "hello world!";
+        alert(message);
+    </code>
   </center>
   <hr>
   
