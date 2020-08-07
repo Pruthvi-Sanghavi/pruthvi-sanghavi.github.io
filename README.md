@@ -4,7 +4,7 @@ new portfolio document for my application.
 - [resume](https://pruthvi-sanghavi.github.io/resume.html)
 - [adventures](https://pruthvi-sanghavi.github.io/adventures.html)
 - [books](https://pruthvi-sanghavi.github.io/books.html)
-- [game](https://pruthvi-sanghavi.github.io/test.html)
+- [blog](https://pruthvi-sanghavi.github.io/blog.html)
 - [davinci](https://pruthvi-sanghavi.github.io/davinci.html)
 - [gamelist](https://pruthvi-sanghavi.github.io/gamelist.html)
 
