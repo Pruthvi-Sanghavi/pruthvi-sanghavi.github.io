@@ -9,4 +9,5 @@ new portfolio document for my application.
 - [gamelist](https://pruthvi-sanghavi.github.io/gamelist.html)
 - [pong](https://pruthvi-sanghavi.github.io/webpong/pong.html)
 - [art](https://pruthvi-sanghavi.github.io/art.html)
+- [stock](https://pruthvi-sanghavi.github.io/stock.html)
 
