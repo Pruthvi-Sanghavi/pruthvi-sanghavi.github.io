@@ -8,4 +8,5 @@ new portfolio document for my application.
 - [davinci](https://pruthvi-sanghavi.github.io/davinci.html)
 - [gamelist](https://pruthvi-sanghavi.github.io/gamelist.html)
 - [pong](https://pruthvi-sanghavi.github.io/webpong/pong.html)
+- [art](https://pruthvi-sanghavi.github.io/art.html)
 
