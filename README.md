@@ -10,4 +10,5 @@ new portfolio document for my application.
 - [pong](https://pruthvi-sanghavi.github.io/webpong/pong.html)
 - [art](https://pruthvi-sanghavi.github.io/art.html)
 - [stock](https://pruthvi-sanghavi.github.io/stock.html)
+- [test](https://pruthvi-sanghavi.github.io/test.html)
 
