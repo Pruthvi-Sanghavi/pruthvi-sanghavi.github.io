@@ -11,6 +11,6 @@ new portfolio document for my application.
 - [art](https://pruthvi-sanghavi.github.io/art.html)
 - [stock](https://pruthvi-sanghavi.github.io/stock.html)
 - [test](https://pruthvi-sanghavi.github.io/test.html)
-# Decision Making Mini Project 1
-- [miniproject_1](https://pruthvi-sanghavi.github.io/miniproj1.html)
+# Decision Making Mini Project 2
+- [miniproject_2](https://pruthvi-sanghavi.github.io/miniproject2.html)
 
