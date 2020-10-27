@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <body background="images/mp1/page_background.png">
+    <style>
+        body {
+            max-width 600px;
+            margin: auto;
+            margin-left: 20px;
+            line-height: 20px;
+            padding: 25px;
+            width: 75%
+            height: 100%
+        }
+        img {
+            padding: 25px;
+            display: block;
+            margin: 0 auto;
+            max-width: 600px;
+            max-height: 100%
+        }
+    </style>
+  </head>
+  <body>
+    
+      <h1>Decision Making for Robotics</h1>
+      <h2>Mini Project 1:</h2>
+      <h2>Blossom Algorithm</h2>
+      <h3>Authors: Achal Vyas and Pruthvi Sanghavi</h3>
+      <hr> </hr>
+<!--       <center><img src="images/mp1/blossom-intro.jpg" alt="Source: google images"></center> -->
+    
+      <h3>Summary</h3>
+      <p>Blossom Algorithm is a matchmaking algorithm used to produce a maximum matching on any graph. It was created by Jack Edmunds in 1961[9].
+          It has applications in a wide variety of fields of Robotics, Operations Theory, Biology, Mathematics etc. In this article, we will focus our attention on the applications in the domain of Robotics and Decision Making for Robotics.
+          A matching is a graph that occurs when all vertices are connected to at most one other vertex through a single edge.
+          A maximum matching occurs when the number of edges in the matching graph is maximized. 
+      <br>Before we dive deeper into the intrinsics of the algorithm. First we will discuss, what is graph theory[6][7] and its basic elements -</br>
+      <br><br><b>Graph theory:</b> is the field of mathematics that deals with mathematical structures used to model pairwise relationships between objects.</br> 
+      <br><b>Graph:</b>A Graph G is an ordered pair of disjoint sets G = (V, E) where E => VxV. Set V is called the vertex or the node set and Set E is called the edge set of graph G.</br>
+      <br><b>Vertex:</b>A fundamental unit with which a graph is constructed.</br>
+      <br><b>Edges:</b>The objects which connect the vertices to form a graph.</br>
+      <br><b>Path:</b>A path is a sequence of vertices traversed using edges.</br>
+      <br><b>Augmenting Path:</b>An augmenting path starts and ends at a free vertex and alternates between unmatched and matched edges.</br>
+      <br>A Graph is represented by a set of vertices and the edges connecting these vertices. The true essence of the graph theory is its flexibility with 
+         which it can be used to model a wide variety of problems. A Graph is used in the domain of computer science to model communication networks, data strucures, computer organizations and flow of computations
+         in the field of sociology to measure actors' prestige or to explore rumor spreading and in the field of <b>Robotics</b> to model multi robotics problem and task allocation problems. The Travelling Salesman Problem is an optimization problem and it can be used using the techniques applied to solve the problems
+         in graphs. In multi robot applications, robots and the task space are modelled as a graph and a matching algorithm is used to allot the specific task to the robot.
+      </p>
+      
+      <h3>Visualizing the Algorithm</h3>
+      <p>The visualization of the algorithm is produced using TU Munich' Edmond's Blossom Algorithm Visualizer [7]</p>
+      <p>Consider an undirected graph G as shown in the graphic.</p>
+      
+        <ol>
+          <li>All the vertices are unmatched(free vertices) as shown in yellow. An augmenting path can be found to improve matching</li>
+          <center><img src="images/mp1/2.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>A node is selected and assigned as the root node(red). A Breadth first search is initiated from the node. A tree of alternating path is expanded until the we reach another free vertex</li>
+          <center><img src="images/mp1/3.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>A node is chosen from the queue and assigned as the active node (red) and its neighbours are explored to look for the free vertex</li>
+          <center><img src="images/mp1/4.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>The next neighbouring node (orange edge) is checked and if the next node is free(yellow), then there is an augmenting path between the current root and the new node</li>
+          <center><img src="images/mp1/5.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>The augmenting path is reconstructed and is highlighted as green</li>
+          <center><img src="images/mp1/6.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          
+          <li>The augmenting path is inverted to improve the matching. Inverting an augmenting path means that all unmatched edges along the path are changed to matched ones and vice versa. By doing so, the number of edges contained in the matching increases by 1. The new matching is colored blue.</li>
+          <center><img src="images/mp1/7.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>There are still unmatched vertices (yellow). We call them free vertices. We try to find an augmenting path to improve the matching. An augmenting path starts and ends at a free vertex and alternates between unmatched and matched edges.</li>
+          <center><img src="images/mp1/8.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>We pick one of the free vertices as the root node of a modified Breadth-First Search (BFS). Its stroke is colored red throughout the execution of the BFS. From the root node, we will construct a tree of alternating paths (BFS tree) until we reach another free vertex.</li>
+          <center><img src="images/mp1/9.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>Pick the next node from the BFS queue. We call this node the currently active node and color it red. From this node, we will explore its neighbors to look for a free vertex.</li>
+          <center><img src="images/mp1/10.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>We check the next neighbor (orange) and find that it is already matched.</li>
+          <center><img src="images/mp1/11.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>We add the neighbor and its mate to the BFS tree. The mate is further pushed to the BFS queue and we might continue our search from there later. The edges of the BFS tree are highlighted by a grey overlay.</li>
+          <center><img src="images/mp1/12.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>We check the next neighbor (orange) and find that this node is already contained in the BFS tree. Thus, there exists a cycle and we see that it has an odd number of edges. We call such a cycle a blossom.</li>
+          <center><img src="images/mp1/13.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          
+          <li>The odd-length cycle we found is contracted to a single supernode. Supernodes are highlighted by a larger radius compared to the other nodes. We further push the new supernode to the BFS queue.</li>
+          <center><img src="images/mp1/14.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          
+          <li>Pick the next node from the BFS queue. We call this node the currently active node and color it red. From this node, we will explore its neighbors to look for a free vertex.</li>
+          <center><img src="images/mp1/15.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>We check the next neighbor (orange edge) and find that it is a free vertex (yellow). Thus, there is an augmenting path between the root of the BFS and this vertex.</li>
+          <center><img src="images/mp1/16.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>The augmenting path is highlighted green. Before improving the matching we have to expand the supernodes contained in the graph.</li>
+          <center><img src="images/mp1/17.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>After the expansion of all supernodes the augmenting path is fully reconstructed and highlighted green.</li>
+          <center><img src="images/mp1/18.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          
+          <li>The augmenting path is inverted to improve the matching. Inverting an augmenting path means that all unmatched edges along the path are changed to matched ones and vice versa. By doing so, the number of edges contained in the matching increases by 1. The new matching is colored blue.</li>
+          <center><img src="images/mp1/19.png" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+          <center><img src="images/mp1/blossom.gif" width="375" height="200" alt="source: TUM Blossom Algorithm"></center>
+
+        </ol>
+      
+    
+      <h3>Formal definition using appropriate notation</h3>
+      <p>Consider an undirected unweighted graph <b>G(V, E)</b>, where <b>V</b> and <b>E</b> are the set of vertices and the set of edges respectively. Let <b>M</b> denote the numbers of matchings in the graph <b>G</b></p>
+      <center><img src="images/mp1/algorithm.png" alt="from references"></center>
+      <p>Given a graph G and a matching M, M is a maximum matching if and only if there exists no M-augmenting path.</p>
+      <h4>Complexity of Algorithm[16]</h4>
+      <p>Three outcomes of Blossom Algorithm:</p>
+      <ol>
+        <li>Maximum Matching</li>
+        <li>An Augmenting Path</li>
+        <li>Blossom</li>
+      </ol>
+      <p>In worst case: The total runtime that the algorithm has is O(|E||V|^2) and each iteration takes in O(|E|).</p>
+      
+      <h3>Use in Decision Making for Robotics</h3>
+      <p>One of the important research areas in Robotics where the Blossom Algorithm has been applied extensively is the task allocation problem.</p>
+        
+      <p>From [1], Consider n robots colored black and m tasks colored gray as shown in the figure. The task allocation problem here can be defined as a bipartite(bigraphs) which are used to study and analyse the robot-task relationships.
+      A Bipartite graph is the one in which the vertices can be divided into two sets such that no two vertices of the same set can be connected by a common edge. The definition of the bipartite graph perfectly explains the scenario here
+       when we have two separate sets one for the robots and other for the tasks and as no two robots be related to each other but robot and tasks. The edges between the robots and the tasks are weighted in order to avoid the random allocation of
+      the tasks to the robots. </p>
+      <center><img src="img/graph.png" alt="from research paper DEC Mata"></center>
+      <p>Once the weighted bipartite graph is produced, based on the weights of the edges a matching graph M is constructed which gives the optimized solution.</p>
+      <center><img src="img/example.png" alt="source: from research paper"></center>
+      <p>In electronic circuit design applications, the end effector of the manipulators need to design the path such that the vertical motion of the manipulator is minimum. In that case the problem can be formulated as a euclidean path planning algorithm and then the 
+      Edmund`s Blossom Algorithm can be used to find the optimal path</p>
+      <center><img src="img/application.png" alt="from references"></center>
+      
+<!--       <h3>Brief description of variants (as appropriate)</h3> -->
+      
+      <h3>Other Applications</h3>
+      <p>Apart from the Robotics Applications such as Task Allocation and Target Tracking. Blossom' Algorithms is used in the solution of combinatorical problems such as the Hall' Marriage Problem and the path problem such as the Hamiltonian Path Problems.<p>      
+      <p>Other areas where the Blossom Matching Algorithm finds its applications are:</p>
+      <ul>
+        <li>The Assignment Problem</li>
+        <li>The oil well drilling problem</li>
+        <li>Plotting Street Maps</li>
+        <li>Scheduling Problems</li>
+        <li>Set Packing Problems</li>
+      </ul>
+     
+      <h3>Open research questions</h3>
+      <p>In the robotics research, the blossom algorithm implementation can be optimized by the adoption of distributed parallelization and problem decomposition approaches.</p>
+      
+      
+     
+      
+      <h3>References</h3>
+      <ol>
+        <li>Ghassemi, Payam, and Chowdhury, Souma. "Decentralized Task Allocation in Multi-Robot Systems via Bipartite Graph Matching Augmented With Fuzzy Clustering." Proceedings of the ASME 2018 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference. Volume 2A: 44th Design Automation Conference. Quebec City, Quebec, Canada. August 26–29, 2018. V02AT03A014. ASME. https://doi.org/10.1115/DETC2018-86161</li>
+        <li>Edmonds, J. (1965). Paths, Trees, and Flowers. Canadian Journal of Mathematics, 17, 449-467. doi:10.4153/CJM-1965-045-4</li>
+        <li>Blum, N. (2015). Maximum Matching in General Graphs Without Explicit Consideration of Blossoms Revisited. ArXiv, abs/1509.04927.</li>
+        <li>Harold N. Gabow:Data Structures for Weighted Matching and Extensions to b-matching and f-factors. ACM Trans. Algorithms 14(3): 39:1-39:80 (2018)</li>
+        <li><a href="http://www.math.uwaterloo.ca/~bico//papers/cobook_select.pdf">http://www.math.uwaterloo.ca/~bico//papers/cobook_select.pdf</a></li>
+        <li><a href="http://www.fang.ece.ufl.edu/eel6935/presentation/GraphTheory.pdf">http://www.fang.ece.ufl.edu/eel6935/presentation/GraphTheory.pdf</a></li>
+        <li><a href="https://courses.lumenlearning.com/waymakermath4libarts/chapter/graph-theory/">Elements of Graph Theory</a></li>
+        <li><a href="https://www-m9.ma.tum.de/graph-algorithms/matchings-blossom-algorithm/index_en.html">https://www-m9.ma.tum.de/graph-algorithms/matchings-blossom-algorithm/index_en.html</a></li>
+        <li><a href="https://www.eecs.tufts.edu/~gdicks02/Blossom/Blossom_Algorithm.html">https://www.eecs.tufts.edu/~gdicks02/Blossom/Blossom_Algorithm.html</a></li>
+        <li><a href="http://www.cs.cmu.edu/~anupamg/advalgos15/lectures/lecture08.pdf">http://www.cs.cmu.edu/~anupamg/advalgos15/lectures/lecture08.pdf</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Graph_theory#Applications">https://en.wikipedia.org/wiki/Graph_theory#Applications</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Bipartite_graph">https://en.wikipedia.org/wiki/Bipartite_graph</a></li>
+        <li><a href="https://people.scs.carleton.ca/~maheshwa/courses/5703COMP/16Fall/Matching-Report.pdf">https://people.scs.carleton.ca/~maheshwa/courses/5703COMP/16Fall/Matching-Report.pdf</a></li>
+        <li><a href="http://web.eecs.utk.edu/~jplank/plank/classes/cs494/494/notes/Edmonds/index.html">http://web.eecs.utk.edu/~jplank/plank/classes/cs494/494/notes/Edmonds/index.html</a></li>
+        <li><a href="https://www.cs.tau.ac.il/~zwick/grad-algo-0910/match.pdf">https://www.cs.tau.ac.il/~zwick/grad-algo-0910/match.pdf</a></li>
+        <li><a href="https://brilliant.org/wiki/blossom-algorithm/">https://brilliant.org/wiki/blossom-algorithm/</a></li>
+
+      </ol>
+    
+  </body>
+</html>
