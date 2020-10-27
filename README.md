@@ -10,7 +10,7 @@ new portfolio document for my application.
 - [gamelist](https://pruthvi-sanghavi.github.io/gamelist.html)
 - [pong](https://pruthvi-sanghavi.github.io/webpong/pong.html)
 - [art](https://pruthvi-sanghavi.github.io/art.html)
-- [stock](https://pruthvi-sanghavi.github.io/stock.html)
+- [template](https://pruthvi-sanghavi.github.io/template.html)
 - [test](https://pruthvi-sanghavi.github.io/test.html)
 # Decision Making Mini Project
 - [miniproject_1](https://pruthvi-sanghavi.github.io/miniproject1.html)
