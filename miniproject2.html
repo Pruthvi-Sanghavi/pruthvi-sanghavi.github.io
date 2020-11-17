@@ -35,35 +35,37 @@
       concept of pig tailing. An autonomous Drone/Electric vehicle can use the transit networks to move to the location of its request. The agent can sit on the transit or get inside the transit to save battery
       and reach the destination safely.</p>
       <h3>Plots</h3>
-        <center><img src="images/mp2/scooter_transit.png"/></center>
-        <p>Red triangles here represent scooter depots. Red path represent the transit routes and black paths indicate the path of the autonomous drone/electric scooter. </p>
+        <center><img src="images/mp2/scooter_transit.png" width="2250" height="1672.5"/></center>
+        <p>The map shown here is a small area in Washington DC. Red triangles here represent scooter depots. Red path represent the transit routes and black paths indicate the path of the autonomous drone/electric scooter. </p>
       <h3>Assumptions</h3>
       <ol>
-        <li>The number of scooters and the depots are constant.</li>
+        <li>The number of drones/scooters/robots and the depots are constant.</li>
         <li>Transit networks are deterministic with respect to the locations and vehicle travel time.</li>
         <li>There is a capacity of transit networks to carry these scooters.</li>
         <li>Transit networks are unaffected because of this robot pigtailing.</li>
-        <li>Electric scooters can be recharged in a negligible amount of time using swappable batteries.</li>
-        <li>Depots have unlimited scooter capacity.</li>
+        <li>Drones/Electric scooters can be recharged in a negligible amount of time using swappable batteries.</li>
+        <li>Depots have unlimited drone/scooter capacity.</li>
       </ol>
       <h3>Cases</h3>
       <ol>
-        <li>When a customer calls an electric scooter, the scooter reaches there from the depot using pigtailing to optimize some cost.</li>
+        <li>When a customer calls an drone/electric scooter, the drone/scooter reaches there from the depot using pigtailing to optimize some cost.</li>
         <li>When a customer drops off the scooter after a ride, the scooter depending upon the charge it has should decide how to reach the depot.</li>
         <li>When the customer calls it not from the depot should it pigtail or go on its own picking up someone on the way increasing ride revenue.</li>
-      </ol>
-      <p>Autonomous delivery robots and autonomous micromobility shared platforms offer flexible solutions to delivery and transportation sectors. But, these technologies face difficulties when it comes to the technical side of of the things.
-        </p>
-      <h3>Paper Summary</h3>
+    </ol>
       <h3>Problem Formulation</h3>
         <center><img src="images/mp2/formulation.png" width="671" height="348"/></center>
         <p>Let the problem be formulated as follows:</p>
-        <p>Size of the scooter fleet = <i>m</i></p>
+        <p>Size of the Drone/scooter fleet = <i>m</i></p>
         <p>Number of depots = <i>l</i> with the geographical locations given as <i>V<sub>d</sub>:= {d<sub>1</sub>, d<sub>2</sub>, d<sub>3</sub>,...,d<sub>l</sub>}</i>.</p>
         <p>Number of ride requests = <i>k</i> from the geographical locations given as <i>V<sub>c</sub>:= {c<sub>1</sub>, c<sub>2</sub>, c<sub>3</sub>,...,c<sub>k</sub>}</i>.</p>
         <p>where k>>m.</p>
         <p>Image shows the vertex set of the Allocation graph <i>G<sub>A</sub>(v<sub>A</sub>, E<sub>A</sub>)</i> which is <i>V<sub>A</sub> = V<sub>D</sub> &cup V<sub>P</sub></i>.</p>
       <h3>Datasets</h3>
+      <p>For this project GBFS (General Bikeshare Feed Specification) dataset was used to know the station positions of the bikes and electric scooter in a small area in Washigton DC.
+      <a href="https://nabsa.net/resources/gbfs/">Link to the GBFS website</a> The station .json consists of the information about the latitude and the loongitude of the bike stations.
+        Transit Data can be extracted from the GTFS Dataset which provides the file with the route coordinates of a transit vehicle. These data files are very large and a lot of computer processing went into it.
+        So for this project, a toy data was created for the transit network route for the purpose of demonstration. The map is generated using a shape file of the road networks in washington DC downloaded from the
+        Washington DC open source datasets.</p>
       <h3>References</h3>
         <ol>
           <li>S. Choudhury, K. Solovey, M. J. Kochenderfer and M. Pavone,”Efficient Large-Scale Multi-Drone Delivery Using Transit Networks,” 2020 IEEE International Conference on Robotics and Automation (ICRA), Paris, France, 2020, pp. 4543-4550, doi: 10.1109/ICRA40945.2020.9197313.</li>
