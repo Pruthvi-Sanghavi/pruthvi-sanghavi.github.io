@@ -67,11 +67,9 @@
         So for this project, a toy data was created for the transit network route for the purpose of demonstration. The map is generated using a shape file of the road networks in washington DC downloaded from the
         Washington DC open source datasets.</p>
     <h3>Results</h3>
-    <p>The results generated in this project are some of the work towards my final project.
-       This project is focussed towards loading the GBFS and GTFS datasets while also formulating the TSP algorithms while relieving some of the 
-       constraints and finding the shortest path from depots to the scooters and also the interdepot travel sequence.</p>
-    <p>The map shown here is a small area in Washington DC. Red triangles here represent scooter depots. Red path represent the transit routes and black paths indicate the path of the autonomous drone/electric scooter. </p>
-
+    <p>The image shown below is a plot for a small area in Washington DC. The red triangles represent the scooter depots, the yellow squares represent the ride requests. Here the number
+      of depots is equal to 4 and the number of ride requests is equal to 15. In the implementation of the algorithm an allocation graph is required to be created. The allocation graph is
+      created by calculating the distance between the depots and the ride requests locations. We exlude some of the edges if it is impossible to travel from d from p within half the allowed flight range </p>
     <center><img src="images/mp2/scooter_transit.png"/></center>
     
     <h3>Actual Results</h3>
