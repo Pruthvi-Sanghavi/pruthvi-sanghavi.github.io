@@ -13,6 +13,7 @@ new portfolio document for my application.
 - [template](https://pruthvi-sanghavi.github.io/template.html)
 - [test](https://pruthvi-sanghavi.github.io/test.html)
 - [pubs](https://pruthvi-sanghavi.github.io/pubs.html)
+- [occam](https://pruthvi-sanghavi.github.io/occam.html)
 
 # Decision Making Mini Project
 - [miniproject_1](https://pruthvi-sanghavi.github.io/miniproject1.html)
