@@ -4,6 +4,7 @@ new portfolio document for my application.
 - [Estimation](https://pruthvi-sanghavi.github.io/kalandfam.html)
 - [glass](https://pruthvi-sanghavi.github.io/glass.html)
 - [entropy](https://pruthvi-sanghavi.github.io/entropy.html)
+- [suit](https://pruthvi-sanghavi.github.io/thermSuit.html)
 
 
 # Decision Making Mini Project
