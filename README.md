@@ -5,6 +5,7 @@ new portfolio document for my application.
 - [glass](https://pruthvi-sanghavi.github.io/glass.html)
 - [entropy](https://pruthvi-sanghavi.github.io/entropy.html)
 - [suit](https://pruthvi-sanghavi.github.io/thermSuit.html)
+- [game](https://pruthvi-sanghavi.github.io/game1.html)
 
 
 # Decision Making Mini Project
