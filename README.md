@@ -7,6 +7,7 @@ new portfolio document for my application.
 - [suit](https://pruthvi-sanghavi.github.io/thermSuit.html)
 - [game](https://pruthvi-sanghavi.github.io/game1.html)
 - [APIS](https://pruthvi-sanghavi.github.io/apis.html)
+- [AWL](https://pruthvi-sanghavi.github.io/awl.html)
 
 
 # Decision Making Mini Project
