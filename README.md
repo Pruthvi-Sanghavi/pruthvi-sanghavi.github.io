@@ -9,6 +9,7 @@ new portfolio document for my application.
 - [APIS](https://pruthvi-sanghavi.github.io/apis.html)
 - [AWL](https://pruthvi-sanghavi.github.io/awl.html)
 - [VROAS](https://pruthvi-sanghavi.github.io/vroas.html)
+- [Srimech](https://pruthvi-sanghavi.github.io/srimech.html)
 
 
 # Decision Making Mini Project
