@@ -10,6 +10,7 @@ new portfolio document for my application.
 - [AWL](https://pruthvi-sanghavi.github.io/awl.html)
 - [VROAS](https://pruthvi-sanghavi.github.io/vroas.html)
 - [Srimech](https://pruthvi-sanghavi.github.io/srimech.html)
+- [Tenezbot](https://pruthvi-sanghavi.github.io/tenezbot.html)
 
 
 # Decision Making Mini Project
