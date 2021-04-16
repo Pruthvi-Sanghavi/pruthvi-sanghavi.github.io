@@ -11,6 +11,7 @@ new portfolio document for my application.
 - [VROAS](https://pruthvi-sanghavi.github.io/vroas.html)
 - [Srimech](https://pruthvi-sanghavi.github.io/srimech.html)
 - [Tenezbot](https://pruthvi-sanghavi.github.io/tenezbot.html)
+- [About me](https://pruthvi-sanghavi.github.io/about.html)
 
 
 # Decision Making Mini Project
