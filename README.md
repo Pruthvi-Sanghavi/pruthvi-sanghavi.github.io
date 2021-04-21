@@ -12,6 +12,7 @@ new portfolio document for my application.
 - [Srimech](https://pruthvi-sanghavi.github.io/srimech.html)
 - [Tenezbot](https://pruthvi-sanghavi.github.io/tenezbot.html)
 - [About me](https://pruthvi-sanghavi.github.io/about.html)
+- [lqrlqg](https://pruthvi-sanghavi.github.io/lqrlqg.html)
 
 
 # Decision Making Mini Project
