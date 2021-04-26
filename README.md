@@ -13,6 +13,7 @@ new portfolio document for my application.
 - [Tenezbot](https://pruthvi-sanghavi.github.io/tenezbot.html)
 - [About me](https://pruthvi-sanghavi.github.io/about.html)
 - [lqrlqg](https://pruthvi-sanghavi.github.io/lqrlqg.html)
+- [obs](https://pruthvi-sanghavi.github.io/obs.html)
 
 
 # Decision Making Mini Project
