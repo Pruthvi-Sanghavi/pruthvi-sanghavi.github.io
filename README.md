@@ -15,6 +15,7 @@ new portfolio document for my application.
 - [lqrlqg](https://pruthvi-sanghavi.github.io/lqrlqg.html)
 - [obs](https://pruthvi-sanghavi.github.io/obs.html)
 - [map](https://pruthvi-sanghavi.github.io/map_test.html)
+- [Trampoline](https://pruthvi-sanghavi.github.io/trampoline.html)
 
 
 # Decision Making Mini Project
