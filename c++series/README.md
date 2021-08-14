@@ -1,3 +1,4 @@
 - [Data Structures](https://pruthvi-sanghavi.github.io/c++series/data_structs.html)
 - [Network Protocols](https://pruthvi-sanghavi.github.io/c++series/net_protocols.html)
 - [Testing in Robotics](https://pruthvi-sanghavi.github.io/c++series/testing.html)
+- [Time](https://pruthvi-sanghavi.github.io/c++series/time.html)
