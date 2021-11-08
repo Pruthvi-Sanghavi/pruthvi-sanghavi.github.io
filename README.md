@@ -16,10 +16,8 @@ new portfolio document for my application.
 - [obs](https://pruthvi-sanghavi.github.io/obs.html)
 - [map](https://pruthvi-sanghavi.github.io/map_test.html)
 - [Trampoline](https://pruthvi-sanghavi.github.io/trampoline.html)
-- [Resume](https://pruthvi-sanghavi.github.io/resume2.html)
+<!-- - [Resume](https://pruthvi-sanghavi.github.io/resume2.html) -->
 
+- [UI](https://pruthvi-sanghavi.github.io/test_ui.html)
 
-# Decision Making Mini Project
-- [miniproject_1](https://pruthvi-sanghavi.github.io/miniproject1.html)
-- [miniproject_2](https://pruthvi-sanghavi.github.io/miniproject2.html)
 
