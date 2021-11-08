@@ -1,12 +1,42 @@
 <html>
   <head>
       <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    
+    
+        <style>
+          body {
+            background-color: #d9d9d9;
+          }
+
+
+                    .thumbnail {
+              width: 320px;
+              height: 240px;
+          }
+
+          .image {
+              width: 100%;
+              height: 100%;    
+          }
+
+          .image img {
+              -webkit-transition: all 1s ease; /* Safari and Chrome */
+              -moz-transition: all 1s ease; /* Firefox */
+              -ms-transition: all 1s ease; /* IE 9 */
+              -o-transition: all 1s ease; /* Opera */
+              transition: all 1s ease;
+          }
+
+          .image:hover img {
+              -webkit-transform:scale(1.25); /* Safari and Chrome */
+              -moz-transform:scale(1.25); /* Firefox */
+              -ms-transform:scale(1.25); /* IE 9 */
+              -o-transform:scale(1.25); /* Opera */
+               transform:scale(1.25);
+          }
+        </style>
   </head>
-  <style>
-    body {
-      background-color: #d9d9d9;
-    }
-  </style>
+
 
   <body>
     <p></p>
@@ -19,6 +49,11 @@
         <img src="images/fryer.png" width="336">
         <img src="images/fryer.png" width="336">
         <img src="images/fryer.png" width="336">
+        <div class="thumbnail">
+          <div class="image">
+            <img src="images/auto_bin.png" width="175">
+          </div>
+        </div>
     </div>
     <center>
       <button style="color:white"><a href="[JIRA BASE URL]/secure/CreateIssueDetails!init.jspa?[ARGUMENTS]" style="text-decoration: none; color:black; font-family: Poiret One;">CREATE TICKET</a></button>
